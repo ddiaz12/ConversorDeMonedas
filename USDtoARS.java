@@ -26,9 +26,9 @@ public class USDtoARS {
                 double resultado = amount * tasaDecambio;
 
                 // Imprimir el resultado
-                System.out.println("---------------------");
+                System.out.println("------------------------------------");
                 System.out.println(amount + " USD equivale a " + resultado + " ARS.");
-                System.out.println("---------------------");
+                System.out.println("------------------------------------");
             } else {
                 System.out.println("La solicitud a la API no fue exitosa. Código de estado: " + response.statusCode());
             }

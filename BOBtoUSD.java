@@ -25,9 +25,9 @@ public class BOBtoUSD {
                 // Realizar la conversión de BOB a USD
                 double resultadoUSD = amount / tasaDeCambioUSD;
 
-                System.out.println("---------------------");
+                System.out.println("------------------------------------");
                 System.out.println(amount + " BOB equivale a " + resultadoUSD + " USD.");
-                System.out.println("---------------------");
+                System.out.println("------------------------------------");
             } else {
                 System.out.println("La solicitud a la API no fue exitosa. Código de estado: " + response.statusCode());
             }

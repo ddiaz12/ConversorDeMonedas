@@ -10,10 +10,11 @@ public class Principal {
             System.out.println("Por favor, seleccione la conversión que desea realizar:");
             System.out.println("1. Dólar a Peso Argentino");
             System.out.println("2. Peso Argentino a Dólar");
-            System.out.println("3. BRL a Dólar");
-            System.out.println("4. Dólar a BRL");
-            System.out.println("5. BOB a Dólar");
-            System.out.println("6. Dólar a BOB");
+            System.out.println("3. Real brasileño a Dólar");
+            System.out.println("4. Dólar a Real brasileño");
+            System.out.println("5. Boliviano a Dólar");
+            System.out.println("6. Dólar a Boliviano");
+            System.out.println("7. Converir otra moneda");
             System.out.println("0. Salir");
 
             opcion = sc.nextByte();
@@ -48,6 +49,15 @@ public class Principal {
                     System.out.println("Ingrese la cantidad de Dólares a convertir:");
                     double cantidadUSD3 = sc.nextDouble();
                     USDtoBOB.convert(cantidadUSD3);
+                    break;
+                case 7:
+                    System.out.println("Ingrese la moneda de origen:");
+                    String monedaOrigen = sc.next().toUpperCase();
+                    System.out.println("Ingrese la moneda de destino:");
+                    String monedaDestino = sc.next().toUpperCase();
+                    System.out.println("Ingrese la cantidad de " + monedaOrigen + " que desea convertir:");
+                    double cantidad = sc.nextDouble();
+                    MonedaConverter.convertirEntreMonedas(monedaOrigen, monedaDestino, cantidad);
                     break;
                 case 0:
                     System.out.println("Gracias por usar el conversor de monedas. ¡Hasta luego!");

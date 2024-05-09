@@ -26,9 +26,9 @@ public class BRLtoUSD {
                 double resultadoUSD = amount / tasaDeCambioBRL;
 
                 // Imprimir el resultado
-                System.out.println("---------------------");
+                System.out.println("------------------------------------");
                 System.out.println(amount + " BRL equivale a " + resultadoUSD + " USD.");
-                System.out.println("---------------------");
+                System.out.println("------------------------------------");
             } else {
                 System.out.println("La solicitud a la API no fue exitosa. Código de estado: " + response.statusCode());
             }
